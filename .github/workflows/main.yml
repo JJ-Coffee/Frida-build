@@ -53,7 +53,7 @@ jobs:
 
     - name: Build Frida for Android
       env:
-        ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        ANDROID_NDK_ROOT: ${{ steps.setup-ndk.outputs.ndk-path }}
       run: |
         cd frida
         ./configure --host=android-arm64
